@@ -61,7 +61,7 @@ It serves as a valuable resource for **creators, backers, and analysts** who wan
 ✨ *This project demonstrates the power of data visualization in uncovering trends and guiding decision-making. If you found it useful, please star ⭐ the repository and share your feedback!*
 
 ## 📊 Dashboard Preview
-![Dashboard Screenshot](./images/dashboard.png)  
+![Dashboard Screenshot]([./images/dashboard.png](https://github.com/vaibhav-vj24/Crowdfunding-Data-Anlyasis/blob/main/Crowdfunding%20Data%20Analysis.png))  
 *(Add your dashboard screenshot here for a visual preview)*
 
 
