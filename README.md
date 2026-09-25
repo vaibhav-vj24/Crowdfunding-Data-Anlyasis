@@ -12,7 +12,44 @@ This repository contains a **Power BI dashboard** analyzing Kickstarter crowdfun
 It highlights project outcomes, categories, funding goals, and global participation patterns.
 
 ---
+## 📂 Data Sets
 
+This project leverages four structured tables to analyze Kickstarter crowdfunding trends:
+
+1. **Crowdfunding Projects (Fact Table)**  
+   - **Fields:** ProjectID, ProjectName, CategoryID, CreatorID, LocationID, GoalUSD, USD_Pledged, BackersCount, CreatedDate, DeadlineDate, State  
+   - **Purpose:** Central fact table containing project-level details such as funding goals, pledged amounts, backers, and project outcomes.
+
+2. **Category (Dimension Table)**  
+   - **Fields:** CategoryID, CategoryName  
+   - **Purpose:** Defines project categories (e.g., Product Design, Music, Games, Film). Enables category-wise analysis.
+
+3. **Location (Dimension Table)**  
+   - **Fields:** LocationID, Country, Region, City  
+   - **Purpose:** Stores geographical information for projects. Supports country-wise and region-wise breakdowns.
+
+4. **Creator (Dimension Table)**  
+   - **Fields:** CreatorID, CreatorName, CreatorProfile  
+   - **Purpose:** Contains information about project creators. Helps track projects by individual or organization.
+
+---
+
+## 🛠 Data Modeling
+
+The **Crowdfunding Projects** table acts as the **fact table**, while **Category**, **Location**, and **Creator** serve as **dimension tables**. This star schema design ensures efficient slicing and dicing of data in Power BI.
+
+### 🔗 Relationships
+- **Crowdfunding Projects → Category**  
+  - Relationship: `Projects.CategoryID = Category.CategoryID`  
+  - Purpose: Analyze projects by category.
+
+- **Crowdfunding Projects → Location**  
+  - Relationship: `Projects.LocationID = Location.LocationID`  
+  - Purpose: Map projects by country and region.
+
+- **Crowdfunding Projects → Creator**  
+  - Relationship: `Projects.CreatorID = Creator.CreatorID`  
+  - Purpose: Track projects by creator.
 
 ---
 
@@ -44,7 +81,6 @@ The project uses four core tables:
 - **Creator** → contains creator details  
 
 ---
----
 
 ## 📝 Conclusion
 This Power BI project provides a **comprehensive view of Kickstarter crowdfunding trends (2009–2019)**, enabling stakeholders to understand:
@@ -61,7 +97,7 @@ It serves as a valuable resource for **creators, backers, and analysts** who wan
 ✨ *This project demonstrates the power of data visualization in uncovering trends and guiding decision-making. If you found it useful, please star ⭐ the repository and share your feedback!*
 
 ## 📊 Dashboard Preview
-![Dashboard Screenshot]([./images/dashboard.png](https://github.com/vaibhav-vj24/Crowdfunding-Data-Anlyasis/blob/main/Crowdfunding%20Data%20Analysis.png))  
+![Dashboard Screenshot](https://github.com/vaibhav-vj24/Crowdfunding-Data-Anlyasis/blob/main/Crowdfunding%20Data%20Analysis.png)  
 *(Add your dashboard screenshot here for a visual preview)*
 
 
