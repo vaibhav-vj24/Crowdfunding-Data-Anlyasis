@@ -1,6 +1,7 @@
 # 🎯 Kickstarter Crowdfunding Data Analysis (Power BI)
 
 ![Power BI](https://img.shields.io/badge/Tool-Power%20BI-yellow?logo=powerbi)
+![Dataset](https://img.shields.io/badge/Dataset-Crowdfunding-blue?logo=microsoftsqlserver)
 ![Status](https://img.shields.io/badge/Status-Completed-brightgreen)
 ![License](https://img.shields.io/badge/License-MIT-blue)
 ![GitHub stars](https://img.shields.io/github/stars/your-username/your-repo?style=social)
