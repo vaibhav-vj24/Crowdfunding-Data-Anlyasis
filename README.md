@@ -11,6 +11,10 @@
 ## 📌 Overview
 This repository contains a **Power BI dashboard** analyzing Kickstarter crowdfunding trends from **2009–2019**.  
 It highlights project outcomes, categories, funding goals, and global participation patterns.
+The dashboard reveals that crowdfunding activity peaked in 2015, with product design, tabletop games, and music emerging as leading categories.
+Success and failure rates are clearly visualized, alongside global distribution through a country‑wise heatmap.
+In preparing the dataset, epoch timestamps were converted into normal calendar dates to make time‑based analysis more intuitive and accurate.
+This transformation allowed for clear year‑wise, quarter‑wise, and duration insights, ensuring the dashboard provides a comprehensive and user‑friendly view of Kickstarter’s evolution over the decade.
 
 ---
 ## 📂 Data Sets
